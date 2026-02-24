@@ -33,59 +33,98 @@ h1, h2, h3, h4 {
     font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.1rem;
-    font-weight: 400;
+.header-right h1 {
+    margin-bottom: 10px;
 }
 
 h3 {
     color: var(--main-color);
     border-bottom: 1px solid #d0d0d0;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
 }
 
-/* ===== HEADER (FLEXBOX) ===== */
+/* ===== HEADER ===== */
 .header {
     display: flex;
-    align-items: center;
     background-color: var(--main-color);
     color: white;
     padding: 40px;
 }
 
+/* Левая колонка */
+.header-left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Правая колонка */
+.header-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Фото */
 .photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 4px solid white;
     object-fit: cover;
-    margin-right: 40px;
+    transform: translateX(-25px);
 }
 
-.contact p {
-    margin-bottom: 8px;
+/* Контейнер двух колонок */
+.contact-columns {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
-.contact a {
+/* Левая и правая колонки */
+.contact-left,
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* расстояние между строками */
+}
+
+/* Каждая строка */
+.contact-left p,
+.contact-right p {
+    margin: 0;
+}
+
+/* Иконка + текст в одну линию */
+.contact-left a,
+.contact-right a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* расстояние между иконкой и текстом */
     color: white;
     text-decoration: none;
 }
 
-.contact i {
-    margin-right: 8px;
+/* Header text and icons white */
+.header a,
+.header i,
+.header p {
+    color: white;
+    text-decoration: none;
 }
 
-/* ===== MAIN LAYOUT (FLEXBOX) ===== */
+/* ===== MAIN LAYOUT ===== */
 .layout {
     display: flex;
+    align-items: stretch;
 }
 
-/* ===== SIDEBAR ===== */
 .sidebar {
     width: 30%;
     background-color: var(--sidebar-bg);
@@ -93,10 +132,33 @@ h3 {
 }
 
 .sidebar section {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
-/* Skills & Languages */
+.content {
+    width: 70%;
+    padding: 50px;
+}
+
+.content section {
+    margin-bottom: 30px; 
+}
+
+/* ===== ARTICLES (IMPORTANT FIX) ===== */
+.content article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.date {
+    color: var(--main-color);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* ===== SKILLS & LANGUAGES ===== */
 .skills li,
 .languages li {
     display: flex;
@@ -109,7 +171,7 @@ h3 {
     color: var(--main-color);
 }
 
-/* Bullet lists */
+/* ===== BULLETS ===== */
 .bullet {
     list-style: none;
 }
@@ -119,27 +181,6 @@ h3 {
     color: var(--main-color);
     margin-right: 6px;
     font-size: 0.7rem;
-}
-
-/* ===== CONTENT ===== */
-.content {
-    width: 70%;
-    padding: 40px;
-}
-
-.content section {
-    margin-bottom: 30px;
-}
-
-.content article {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.date {
-    color: var(--main-color);
-    font-weight: bold;
 }
 
 /* ===== FOOTER ===== */
@@ -176,4 +217,5 @@ h3 {
     .content {
         width: 100%;
     }
+
 }
