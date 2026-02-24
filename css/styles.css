@@ -1,7 +1,10 @@
 /* ===== VARIABLES ===== */
 :root {
     --main-color: #17abb3;
-    --sidebar-bg: #e9e9e9;
+    --dark-color: #333333;
+    --light-gray: #e3e3e3;
+    --background-light: #f5f5f5;
+    --white: #ffffff;
 }
 
 /* ===== RESET ===== */
@@ -29,8 +32,14 @@ body {
 }
 
 /* ===== TITLES ===== */
-h1, h2, h3, h4 {
+h1, h2 {
     font-family: 'Lato', sans-serif;
+    color: var(--white);
+}
+
+h3, h4 {
+    font-family: 'Lato', sans-serif;
+    color: var(--main-color);
 }
 
 .header-right h1 {
@@ -99,7 +108,7 @@ h3 {
 /* Каждая строка */
 .contact-left p,
 .contact-right p {
-    margin: 0;
+margin: 0;
 }
 
 /* Иконка + текст в одну линию */
@@ -108,7 +117,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: 8px; /* расстояние между иконкой и текстом */
-    color: white;
+    color: var(--light-gray);
     text-decoration: none;
 }
 
@@ -116,8 +125,16 @@ h3 {
 .header a,
 .header i,
 .header p {
-    color: white;
+    color: var(--white);
     text-decoration: none;
+}
+
+.contact i {
+    margin-right: 8px;
+}
+
+.contact-text {
+    color: var(--light-gray)
 }
 
 /* ===== MAIN LAYOUT ===== */
@@ -128,7 +145,7 @@ h3 {
 
 .sidebar {
     width: 30%;
-    background-color: var(--sidebar-bg);
+    background-color: var(--light-gray);
     padding: 40px 30px;
 }
 
@@ -155,7 +172,7 @@ h3 {
 }
 
 .content article:hover {
-    background-color: #f2f2f2;
+    background-color: var(--light-gray);
 }
 
 .content article:hover::before {
@@ -202,7 +219,7 @@ h3 {
 /* ===== FOOTER ===== */
 .footer {
     background-color: var(--main-color);
-    color: white;
+    color: var(--light-gray);
     text-align: center;
     padding: 20px;
 }
