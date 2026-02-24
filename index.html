@@ -1,139 +1,201 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>CV - Roustam ABDOULGALIMOV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV en ligne de Roustam ABDOULGALIMOV, développeur web en formation HTML, CSS et Git.">
-    <link rel="stylesheet" href="css/style.css">
+
+    <title>CV - Roustam ABDOULGALIMOV</title>
+
+    <meta name="description"
+          content="CV de Roustam ABDOULGALIMOV, Développeur Web et Web Mobile en formation, compétences en HTML, CSS, JavaScript et expérience professionnelle.">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <div class="container">
 
-    <header>
-        <img src="assets/images/photo.jpg" alt="Photo de profil" class="profile-photo">
+    <header class="header">
+
+        <img src="assets/images/photo.jpg"
+             alt="Photo de profil"
+             class="photo">
 
         <div class="header-info">
+
             <h1>Roustam ABDOULGALIMOV</h1>
             <h2>Développeur Web et Web Mobile</h2>
 
             <div class="contact">
-                <p>📞 <a href="tel:+33601640565">06 01 64 05 65</a></p>
-                <p>📧 <a href="mailto:abunadiya44@gmail.com">abunadiya44@gmail.com</a></p>
-                <p>💻 <a href="https://github.com/abunadiya" target="_blank">GitHub</a></p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:rus0780@gmail.com">rus0780@gmail.com</a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33601640565">06 01 64 05 65</a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    France
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-car"></i>
+                    Permis B
+                </p>
+
             </div>
+
         </div>
+
     </header>
 
-    <main>
+    <main class="layout">
 
-        <section>
-            <h3>Formation</h3>
+        <aside class="sidebar">
 
-            <article>
-                <h4>Développeur Web</h4>
-                <p>Centre Européen de Formation, France</p>
-                <p><time datetime="2026">2026</time></p>
-            </article>
+            <section>
+                <h3>Compétences</h3>
+                <ul class="skills">
+                    <li><span>HTML</span><span class="stars">★★★★☆</span></li>
+                    <li><span>CSS</span><span class="stars">★★★★☆</span></li>
+                    <li><span>Git</span><span class="stars">★★★★☆</span></li>
+                    <li><span>JavaScript</span><span class="stars">★★☆☆☆</span></li>
+                    <li><span>PHP</span><span class="stars">★☆☆☆☆</span></li>
+                </ul>
+            </section>
 
-            <article>
-                <h4>Formation en mécanique automobile</h4>
-                <p>AFPA, France</p>
-                <p><time datetime="2020">2020</time></p>
-            </article>
+            <section>
+                <h3>Langues</h3>
+                <ul class="languages">
+                    <li><span>Français</span><span>Langue maternelle</span></li>
+                    <li><span>Russe</span><span>Langue maternelle</span></li>
+                    <li><span>Anglais</span><span>Compréhension écrite</span></li>
+                </ul>
+            </section>
 
-            <article>
-                <h4>Licence en Droit</h4>
-                <p>Faculté de Droit, Université Internationale Kazakho-Turque, Kazakhstan</p>
-                <p><time datetime="2021">2021</time></p>
-            </article>
-        </section>
+            <section>
+                <h3>Qualités</h3>
+                <ul class="bullet">
+                    <li>Rigueur</li>
+                    <li>Autonomie</li>
+                    <li>Organisation</li>
+                    <li>Esprit d’équipe</li>
+                </ul>
+            </section>
 
-        <section>
-            <h3>Expérience professionnelle</h3>
+            <section>
+                <h3>Centres d’intérêt</h3>
+                <ul class="bullet">
+                    <li>Technologie</li>
+                    <li>Sport</li>
+                </ul>
+            </section>
 
-            <article>
-                <h4>Préparateur de commandes</h4>
-                <p>TEN Tôlerie Émaillerie Nantaise</p>
+        </aside>
+
+        <section class="content">
+
+            <section>
+                <h3>Profil</h3>
                 <p>
-                    <time datetime="2025-06">Juin 2025</time> -
-                    <time datetime="2026-12">Décembre 2026</time>
+                    Développeur web en formation, motivé et rigoureux,
+                    avec expérience professionnelle en logistique et volonté d’évolution.
                 </p>
-            </article>
+            </section>
 
-            <article>
-                <h4>Agent de quai</h4>
-                <p>FedEx, Mondial Relay, La Poste</p>
-                <p>
-                    <time datetime="2016-09">Septembre 2016</time> -
-                    <time datetime="2025-05">Mai 2025</time>
-                </p>
-            </article>
+            <section>
+                <h3>Formation</h3>
+                <article>
+                    <div>
+                        <h4>Développeur Web et Web Mobile</h4>
+                        <p><em>Centre Européen de Formation</em></p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2026-01-01">2026</time>
+                    </div>
+                </article>
 
-            <article>
-                <h4>Employé polyvalent</h4>
-                <p>Association intermédiaire CAAP Ouest</p>
-                <p>
-                    <time datetime="2014-08">Août 2014</time> -
-                    <time datetime="2016-08">Août 2016</time>
-                </p>
-            </article>
+                <article>
+                    <div>
+                        <h4>Faculté de Droit (Bac+4)</h4>
+                        <p><em>Université internationale kazakho-turque</em></p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2021-01-01">2021</time>
+                    </div>
+                </article>
 
-        </section>
+            </section>
 
-        <section>
-            <h3>Compétences</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Git / GitHub</li>
-                <li>VS Code</li>
-            </ul>
-        </section>
+            <section>
+                <h3>Expérience professionnelle</h3>
 
-        <section>
-            <h3>Qualités professionnelles</h3>
-            <ul>
-                <li>Rigueur</li>
-                <li>Autonomie</li>
-                <li>Esprit d’équipe</li>
-                <li>Organisation</li>
-                <li>Capacité d’adaptation</li>
-            </ul>
-        </section>
+                <article>
+                    <div>
+                        <h4>Préparateur de commandes</h4>
+                        <p><em>TEN Nantes</em></p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2025-06-01">Juin 2025</time>
+                        -
+                        <time datetime="2026-12-31">Décembre 2026</time>
+                    </div>
+                </article>
 
-        <section>
-            <h3>Langues</h3>
-            <ul>
-                <li>Russe - langue maternelle</li>
-                <li>Français - intermédiaire</li>
-                <li>Anglais - compréhension à la lecture </li>
-                <li>Arabe - intermédiaire</li>
-                <li>Turc - intermédiaire</li>
-            </ul>
+                <article>
+                    <div>
+                        <h4>Agent de quai</h4>
+                        <p><em>FedEx</em></p>
+                    </div>
+                    <div class="date">
+                        <time datetime="2016-09-01">Septembre 2016</time>
+                        -
+                        <time datetime="2025-05-31">Mai 2025</time>
+                    </div>
+                </article>
+
+            </section>
+
         </section>
 
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer">
 
-        <div class="social-links">
+        <div class="social">
+
             <a href="https://linkedin.com" target="_blank">
-                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="https://github.com/abunadiya" target="_blank">
-                <img src="assets/icons/github.svg" alt="GitHub">
+            <a href="https://github.com" target="_blank">
+                <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="mailto:abunadiya44@gmail.com">
-                <img src="assets/icons/email.svg" alt="Email">
+            <a href="mailto:rus0780@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
             </a>
+
         </div>
+
         <p>
-            Mis à jour le <time datetime="2026-02-26">26/02/2026</time>
+            Mis à jour le
+            <time datetime="2026-02-23">23/02/2026</time>
         </p>
 
     </footer>
