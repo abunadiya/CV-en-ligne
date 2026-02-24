@@ -93,7 +93,7 @@ h3 {
 .contact-columns {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
     margin-top: 20px;
 }
 
@@ -129,12 +129,10 @@ margin: 0;
     text-decoration: none;
 }
 
-.contact i {
-    margin-right: 8px;
-}
-
 .contact-text {
+    font-size: small;
     color: var(--light-gray)
+
 }
 
 /* ===== MAIN LAYOUT ===== */
@@ -218,6 +216,7 @@ margin: 0;
 
 /* ===== FOOTER ===== */
 .footer {
+    font-size: small;
     background-color: var(--main-color);
     color: var(--light-gray);
     text-align: center;
